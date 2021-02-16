@@ -38,6 +38,7 @@ func main() {
 
 	api.POST("/users", userHandler.RegisterUser)
 	api.POST("/sessions", userHandler.Login)
+	api.GET("/users/fetch", userHandler.FetchUser)
 
 	router.Run()
 }
